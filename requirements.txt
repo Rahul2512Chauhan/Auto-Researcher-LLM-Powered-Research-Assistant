@@ -1,0 +1,11 @@
+langchain
+langchain-core>=0.1.37
+langchain-community>=0.0.26
+langchain-huggingface
+transformers
+torch
+accelerate
+faiss-cpu
+streamlit
+ipykernel
+python-dotenv
