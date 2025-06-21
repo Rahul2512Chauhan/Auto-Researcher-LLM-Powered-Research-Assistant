@@ -2,16 +2,16 @@
 🧠 Auto Researcher – LLM-Powered Research Assistant
 ```
 ```
-🔍 Loom Demo:
+## 🎥 Loom Demo
 
-Watch how Auto-Researcher helps :
+Watch how **Auto-Researcher** automates:
 
--automate literature review,
--insight extraction,
--research question generation,
--and document Q&A using a fully local Zephyr model + FAISS.
+- Literature review 📚  
+- Insight extraction 💡  
+- Research question generation 🧠  
+- Document Q&A with RAG 🤖  
 
-🎥 Watch the video : https://www.loom.com/share/e9210b1763db400882d05bb030ada533?sid=5898fe1a-5e60-4aa2-9ec3-ffb94b7d6d9f
+▶️ [Click here to watch the demo video on Loom](https://www.loom.com/share/e9210b1763db400882d05bb030ada533?sid=5898fe1a-5e60-4aa2-9ec3-ffb94b7d6d9f)
 
 ```
 ```
