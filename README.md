@@ -11,7 +11,7 @@ Watch how Auto-Researcher helps :
 -research question generation,
 -and document Q&A using a fully local Zephyr model + FAISS.
 
-🎥 Watch the video
+🎥 Watch the video : https://www.loom.com/share/e9210b1763db400882d05bb030ada533?sid=5898fe1a-5e60-4aa2-9ec3-ffb94b7d6d9f
 
 ```
 ```
