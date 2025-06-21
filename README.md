@@ -1,7 +1,7 @@
 
 🧠 Auto Researcher – LLM-Powered Research Assistant
 
-🎥 Loom Demo :👉 [Click here to watch the app]([https://multi-agent-tutor-production.up.railway.app](https://www.loom.com/share/e9210b1763db400882d05bb030ada533?sid=2941d0d0-df3f-488a-a04c-085d9e7f9abd))
+🎥 Loom Demo :[Click to watch the video](https://www.loom.com/share/e9210b1763db400882d05bb030ada533?sid=2941d0d0-df3f-488a-a04c-085d9e7f9abd)
 
 <p align="center">
   <a href="https://www.loom.com/share/e9210b1763db400882d05bb030ada533?sid=0f1efaeb-ad1f-4ee7-b2f2-732ed3f98598" target="_blank">
