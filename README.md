@@ -1,7 +1,6 @@
 ```
 🧠 Auto Researcher – LLM-Powered Research Assistant
-```
-```
+
 🎥 Loom Demo
 
 Watch how Auto-Researcher automates:
