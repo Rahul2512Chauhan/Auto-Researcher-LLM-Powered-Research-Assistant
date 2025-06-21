@@ -12,6 +12,7 @@ Watch how Auto-Researcher automates:
 
 [![Watch the demo video](assets/loom_demo_thumbnail.png)](https://www.loom.com/share/e9210b1763db400882d05bb030ada533?sid=0f1efaeb-ad1f-4ee7-b2f2-732ed3f98598)
 
+
 ```
 ```
 This project automates the research workflow using a locally-hosted Zephyr 7B model through a Streamlit interface.
