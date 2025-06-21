@@ -1,7 +1,14 @@
 
 🧠 Auto Researcher – LLM-Powered Research Assistant
 
-🎥 Loom Demo :
+🎥 Loom Demo
+
+<p align="center">
+  <a href="https://www.loom.com/share/e9210b1763db400882d05bb030ada533?sid=0f1efaeb-ad1f-4ee7-b2f2-732ed3f98598" target="_blank">
+    <img src="https://raw.githubusercontent.com/Rahul2512Chauhan/Auto-Researcher-LLM-Powered-Research-Assistant/main/assets/loom_demo_thumbnail.png" alt="Watch the demo video" width="600"/>
+  </a>
+</p>
+
 
 Watch how Auto-Researcher automates your research workflow:
 
@@ -9,8 +16,7 @@ Watch how Auto-Researcher automates your research workflow:
 - 💡 Insight extraction from papers  
 - 🧠 Research question generation  
 - 🤖 RAG-based document Q&A (ask your PDF anything!)
-  
-[![Watch the demo video](https://raw.githubusercontent.com/Rahul2512Chauhan/Auto-Researcher-LLM-Powered-Research-Assistant/main/assets/loom_demo_thumbnail.png)](https://www.loom.com/share/e9210b1763db400882d05bb030ada533?sid=0f1efaeb-ad1f-4ee7-b2f2-732ed3f98598)
+
 
 ```
 This project automates the research workflow using a locally-hosted Zephyr 7B model through a Streamlit interface.
