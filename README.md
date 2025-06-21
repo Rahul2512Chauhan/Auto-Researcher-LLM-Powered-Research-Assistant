@@ -1,9 +1,23 @@
 ```
 🧠 Auto Researcher – LLM-Powered Research Assistant
 ```
+```
+🔍 Loom Demo:
+
+Watch how Auto-Researcher helps :
+
+-automate literature review,
+-insight extraction,
+-research question generation,
+-and document Q&A using a fully local Zephyr model + FAISS.
+
+🎥 Watch the video
 
 ```
-This project automates the research workflow using a locally-hosted Zephyr 7B model through a Streamlit interface. It enables users to:
+```
+This project automates the research workflow using a locally-hosted Zephyr 7B model through a Streamlit interface.
+
+It enables users to:
 
 - 🔍 Search and summarize papers from arXiv
 - 📄 Upload and analyze research PDFs
@@ -18,17 +32,6 @@ This project automates the research workflow using a locally-hosted Zephyr 7B mo
 
 ```
 > 💸 Zero-cost LLM: All features powered by a fully local Zephyr 7B model — no OpenAI or API costs!
-```
-
-
-```
-
-🧪 Demo
-
-▶️ [Click to watch the demo on Loom](https://www.loom.com/share/YOUR-VIDEO-ID)
-
-> App is local-only due to large model size. Demo video shows complete workflow.
-
 ```
 
 ```
