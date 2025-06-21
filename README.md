@@ -2,16 +2,16 @@
 🧠 Auto Researcher – LLM-Powered Research Assistant
 ```
 ```
-## 🎥 Loom Demo
+🎥 Loom Demo
 
-[![Watch the Demo Video](https://img.youtube.com/vi/0Bz4LKnk8GA/0.jpg)](https://www.loom.com/share/e9210b1763db400882d05bb030ada533?sid=5898fe1a-5e60-4aa2-9ec3-ffb94b7d6d9f)
+Watch how Auto-Researcher automates:
 
-> ▶️ Click the image above to watch how Auto-Researcher automates:
-> - Literature review 📚  
-> - Insight extraction 💡  
-> - Research question generation 🧠  
-> - Document Q&A with RAG 🤖  
+- Literature review 📚  
+- Insight extraction 💡  
+- Research question generation 🧠  
+- Document Q&A with RAG 🤖  
 
+[![Watch the demo video](assets/loom_demo_thumbnail.png)](https://www.loom.com/share/e9210b1763db400882d05bb030ada533?sid=0f1efaeb-ad1f-4ee7-b2f2-732ed3f98598)
 
 ```
 ```
