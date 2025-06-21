@@ -10,7 +10,17 @@ Watch how Auto-Researcher automates:
 - Research question generation 🧠  
 - Document Q&A with RAG 🤖  
 
-[![Watch the demo video](assets/loom_demo_thumbnail.png)](https://www.loom.com/share/e9210b1763db400882d05bb030ada533?sid=0f1efaeb-ad1f-4ee7-b2f2-732ed3f98598)
+## 🎥 Loom Demo
+
+Watch how **Auto-Researcher** automates:
+
+- Literature review 📚  
+- Insight extraction 💡  
+- Research question generation 🧠  
+- Document Q&A with RAG 🤖  
+
+[![Watch the demo video](https://raw.githubusercontent.com/Rahul2512Chauhan/Auto-Researcher-LLM-Powered-Research-Assistant/main/assets/loom_demo_thumbnail.png)](https://www.loom.com/share/e9210b1763db400882d05bb030ada533?sid=0f1efaeb-ad1f-4ee7-b2f2-732ed3f98598)
+
 
 
 ```
