@@ -28,3 +28,7 @@ phase_5_rag_based_agent/
 faiss_index/
 ui.py
 assets/
+.DS_Store
+*.png
+faiss_index/
+_old/
