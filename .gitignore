@@ -7,3 +7,28 @@ __pycache__/
 *.md
 *.log
 .DS_Store
+.env¯# OS junk
+.DS_Store
+*.png
+
+# venv
+venv/
+.env
+
+# old cache
+faiss_index/
+*/__pycache__/
+
+# old architecture
+phase_1_setup/
+phase_2_lit_review/
+phase_3_insight_extractor/
+phase_4_research_question_generator/
+phase_5_rag_based_agent/
+faiss_index/
+ui.py
+assets/
+.DS_Store
+*.png
+faiss_index/
+_old/
