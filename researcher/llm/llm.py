@@ -1,11 +1,26 @@
 from researcher.llm.provider_router import LLMRouter
 
-# Initialize one router (Groq for now)
-llm = LLMRouter()
+# Create a single global router instance
+_llm_router = LLMRouter()
 
-def generate(prompt: str) -> str:
+
+from typing import Optional
+
+def generate(
+    prompt: str,
+    system_prompt: Optional[str] = None,
+    temperature: Optional[float] = None,
+    max_tokens: Optional[int] = None,
+) -> str:
     """
-    Global simple LLM access.
-    Usage: from auto_researcher.llm.llm import generate
+    Universal LLM entrypoint for your entire application.
+    Usage:
+        from researcher.llm.llm import generate
+        text = generate("Explain GraphRAG")
     """
-    return llm.generate(prompt)
+    return _llm_router.generate(
+        prompt,
+        system_prompt=system_prompt,
+        temperature=temperature,
+        max_tokens=max_tokens,
+    )

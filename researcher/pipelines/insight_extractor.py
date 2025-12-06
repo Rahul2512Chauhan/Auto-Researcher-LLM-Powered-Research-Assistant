@@ -1,4 +1,4 @@
-from llm.llm import generate
+from researcher.llm.llm import generate
 
 def extract_insights(text: str) -> str:
     """

@@ -1,4 +1,4 @@
-from llm.llm import generate
+from researcher.llm.llm import generate
 
 def summarize_text(text: str) -> str:
     """

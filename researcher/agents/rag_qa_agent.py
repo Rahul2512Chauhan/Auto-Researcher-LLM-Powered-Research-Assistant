@@ -1,4 +1,4 @@
-from llm.llm import generate
+from researcher.llm.llm import generate
 from data.rag_index import retrieve_relevant_chunks
 
 def rag_answer(query: str, top_k: int = 5) -> str:

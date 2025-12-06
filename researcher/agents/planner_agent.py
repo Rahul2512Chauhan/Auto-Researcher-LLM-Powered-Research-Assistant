@@ -1,51 +1,63 @@
 import json
 from typing import List, Dict, Any
-
+from researcher.memory.memory_store import MemoryStore
 from researcher.llm.llm import generate
 
+def plan_research(query: str):
+    # Fetch memory relevant to this query
+    mem = MemoryStore.search(query, top_k=5)
 
-PLANNER_SYSTEM_PROMPT = """
-You are an expert research planner AI.
-Your job is to break a research query into a structured set of tasks.
+    # Extract documents nicely
+    past_docs = []
+    if mem and "documents" in mem:
+        for group in mem["documents"]:
+            for d in group:
+                past_docs.append(d)
+
+    memory_block = ""
+    if past_docs:
+        memory_block = "\n\nPAST KNOWLEDGE (from memory):\n" + "\n".join(
+            f"- {p}" for p in past_docs
+        )
+ALLOWED_TASKS = [
+    "search_papers",
+    "summarize_papers",
+    "extract_insights",
+    "compare_insights",
+    "generate_questions",
+    "write_report"
+]
+
+PLANNER_PROMPT = f"""
+You are an expert research workflow planner.
+
+Given a user research query, create a step-by-step plan using ONLY these allowed tasks:
+
+{ALLOWED_TASKS}
 
 Rules:
-- RETURN ONLY VALID JSON. No explanation.
-- JSON must be a list of task objects.
-- Each task object must contain:
-  - name: short task ID string
-  - description: what this task does
-  - required_inputs: list of inputs required
-  - expected_outputs: list of outputs it produces
-  - dependencies: list of task names this step depends on
+- Output STRICT JSON. No commentary.
+- Each task must include: name, inputs, outputs, dependencies.
+- Use 4–6 tasks maximum.
+- Tasks MUST be chosen only from ALLOWED_TASKS.
+- The workflow must end with "write_report".
 
-- Use snake_case for "name".
-
-- Do NOT include comments or text outside JSON.
+Example format:
+{{
+  "tasks": [
+    {{
+      "name": "search_papers",
+      "inputs": ["query"],
+      "outputs": ["papers"],
+      "dependencies": []
+    }},
+    {{
+      "name": "summarize_papers",
+      "inputs": ["papers"],
+      "outputs": ["summaries"],
+      "dependencies": ["search_papers"]
+    }}
+  ]
+}}
 """
 
-
-def plan_research(query: str) -> List[Dict[str, Any]]:
-    """
-    Calls Groq LLM and returns a list of structured tasks for the research workflow.
-    """
-
-    user_prompt = f"Generate a complete task plan for this research query:\n\n{query}"
-
-    raw_output = generate(
-        prompt=user_prompt,
-        system_prompt=PLANNER_SYSTEM_PROMPT,
-        temperature=0.2,
-        max_tokens=800,
-    )
-
-    # Try to parse JSON safely
-    try:
-        tasks = json.loads(raw_output)
-        if isinstance(tasks, list):
-            return tasks
-        else:
-            print("[Planner] Output was not a list. Returning empty.")
-            return []
-    except Exception as e:
-        print(f"[Planner] Failed to parse JSON: {e}\nRaw output:\n{raw_output}")
-        return []

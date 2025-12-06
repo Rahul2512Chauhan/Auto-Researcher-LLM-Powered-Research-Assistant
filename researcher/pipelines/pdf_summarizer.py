@@ -1,4 +1,4 @@
-from llm.llm import generate
+from researcher.llm.llm import generate
 
 def summarize_pdf_text(paper_text: str) -> str:
     """
